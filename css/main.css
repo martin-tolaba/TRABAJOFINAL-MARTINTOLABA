@@ -1,0 +1,124 @@
+
+
+selector{
+    propiedad = valor ;
+}
+/*reset*/
+*{
+    /*espacio exterior*/
+    margin: 0px;
+
+/*espacio interior*/
+padding: 0px;
+}
+body{
+    background-color: #8C7B5A;
+    padding: 50px;
+    margin: 50px;
+    color: black;
+    text-align: center;
+}
+
+
+
+h1{
+    color: black;
+    text-align: center;
+}
+h2 {
+    color: black;
+    text-align: center;
+}
+
+.red{
+    color: black;
+}
+
+
+#black{
+    color: black;
+}
+
+
+header{
+    background-color:#8C7B5A;
+    text-align: center;
+   
+
+}
+header img{
+    width: 450px;
+    header img{
+    align-items: center;
+    display: flex;  
+    flex-direction: row;
+    justify-content: center 50px;
+   }
+       
+
+}
+
+
+header nav ul li{
+    list-style: none; 
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50px;
+    
+    }
+
+/* estilos de main*/
+
+main{
+    text-align: center;
+}
+main h1{
+    font-size: 30px;
+    text-decoration: underline;
+    text-transform: uppercase;
+
+}
+
+main p {
+    font-size: 15;
+    
+    
+}
+main{
+    margin: 10px 50px;
+}
+main .img{
+    display: flex;
+    
+}
+
+/* estilos de footer*/
+ footer{
+    text-align: center;
+    font-size: 20px;
+ }
+ /*mq de tablet*/
+
+@media screen and (min-width: 600px) {
+    main{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50%);
+    }
+
+    main .renault.png{
+        grid-column: span 2;
+    }
+    footer{
+        margin: 70px
+    }
+}
+/* mq de desktop*/
+
+@media screen and (min-width: 1024px) {
+    main .renault.png
+        display: block;
+    }
+    main{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 40% 40% 15%;
+    }
